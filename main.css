@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.slideshow {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 7s ease-in-out;
+}
+
+.slideshow .slide:first-child {
+    opacity: 1;
+}
+
+@keyframes slideshow {
+    0% { opacity: 1; }
+    33% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slideshow .slide:nth-child(1) {
+    animation: slideshow 9s infinite 0s;
+}
+
+.slideshow .slide:nth-child(2) {
+    animation: slideshow 9s infinite 3s;
+}
+
+.slideshow .slide:nth-child(3) {
+    animation: slideshow 9s infinite 6s;
+}
+
+.about-text {
+    padding: 20px;
+}
+
+.setup {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.setup li {
+    margin: 15px;
+}
+
+.setup li img {
+    width: 100px;
+    height: auto;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.social-links li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
