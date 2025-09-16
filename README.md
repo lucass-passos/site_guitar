@@ -4,6 +4,14 @@ Este é o repositório do site pessoal do guitarrista **Lucas Passos**, desenvol
 
 ---
 
+## 🌍 Site Online
+
+🔗 Acesse em: [site-guitar.vercel.app](https://site-guitar.vercel.app/#sobre)  
+
+[![Deploy with Vercel](https://vercel.com/button)](https://site-guitar.vercel.app/)
+
+---
+
 ## 📌 Seções do site
 
 - **Header / Menu de Navegação**  
@@ -34,10 +42,11 @@ Este é o repositório do site pessoal do guitarrista **Lucas Passos**, desenvol
 - **HTML5**
 - **CSS3**
 - [Google Fonts](https://fonts.google.com/) (Bungee e Roboto)
+- **Vercel** (hospedagem e deploy)
 
 ---
 
-## 🚀 Como executar o projeto
+## 🚀 Como executar o projeto localmente
 
 1. Clone este repositório:
    ```bash
